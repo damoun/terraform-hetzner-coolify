@@ -1,0 +1,24 @@
+name: Terraform
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: [ "**.tf"]
+  pull_request:
+    branches: [ "main" ]
+    paths: [ "**.tf"]
+
+jobs:
+  tflint:
+    name: Terraform format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Install tools
+        uses: asdf-vm/actions/install@v3
+
+      - name: Terraform
+        run: terraform fmt -check -recursive

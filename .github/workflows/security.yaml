@@ -1,0 +1,36 @@
+name: Security Checks
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: [ "**.tf"]
+  pull_request:
+    branches: [ "main" ]
+    paths: [ "**.tf"]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read
+
+jobs:
+  tfsec:
+    name: Run tfsec sarif report
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Run tfsec
+        uses: aquasecurity/tfsec-sarif-action@21ded20e8ca120cd9d3d6ab04ef746477542a608
+        with:
+          sarif_file: tfsec.sarif
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: tfsec.sarif
