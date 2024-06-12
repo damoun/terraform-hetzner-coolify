@@ -88,6 +88,8 @@ output "url" {
 
 | Name | Description |
 |------|-------------|
+| <a name="output_ipv4_address"></a> [ipv4\_address](#output\_ipv4\_address) | The IP of the Coolify instance |
+| <a name="output_ipv6_address"></a> [ipv6\_address](#output\_ipv6\_address) | The IPv6 of the Coolify instance |
 | <a name="output_url"></a> [url](#output\_url) | The URL of the Coolify instance |
 
 ## Resources
