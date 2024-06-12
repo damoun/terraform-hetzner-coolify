@@ -16,6 +16,20 @@ resource "hcloud_firewall" "coolify" {
   rule {
     direction  = "in"
     protocol   = "tcp"
+    port       = "80"
+    source_ips = var.firewall_source_ips
+  }
+
+  rule {
+    direction  = "in"
+    protocol   = "tcp"
+    port       = "443"
+    source_ips = var.firewall_source_ips
+  }
+
+  rule {
+    direction  = "in"
+    protocol   = "tcp"
     port       = "6001"
     source_ips = var.firewall_source_ips
   }
