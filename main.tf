@@ -1,6 +1,6 @@
 module "cloudinit" {
   source  = "registry.terraform.io/damoun/cloudinit/coolify"
-  version = "1.0.1"
+  version = "1.1.0"
 }
 
 resource "hcloud_firewall" "coolify" {
