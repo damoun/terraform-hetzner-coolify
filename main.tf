@@ -1,5 +1,5 @@
 module "cloudinit" {
-  source  = "damoun/cloudinit/coolify"
+  source  = "registry.terraform.io/damoun/cloudinit/coolify"
   version = "1.0.1"
 }
 
