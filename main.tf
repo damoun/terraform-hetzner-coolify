@@ -1,6 +1,6 @@
 module "cloudinit" {
   source  = "damoun/cloudinit/coolify"
-  version = "1.0.0"
+  version = "1.0.1"
 }
 
 resource "hcloud_firewall" "coolify" {

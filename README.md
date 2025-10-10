@@ -72,7 +72,7 @@ output "url" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cloudinit"></a> [cloudinit](#module\_cloudinit) | damoun/cloudinit/coolify | 1.0.0 |
+| <a name="module_cloudinit"></a> [cloudinit](#module\_cloudinit) | damoun/cloudinit/coolify | 1.0.1 |
 
 ## Inputs
 
