@@ -21,7 +21,6 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8.4 |
-| <a name="requirement_hcloud"></a> [hcloud](#requirement\_hcloud) | 1.54.0 |
 
 ## Example
 
@@ -66,13 +65,13 @@ output "url" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | 1.54.0 |
+| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | n/a |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cloudinit"></a> [cloudinit](#module\_cloudinit) | damoun/cloudinit/coolify | 1.0.1 |
+| <a name="module_cloudinit"></a> [cloudinit](#module\_cloudinit) | registry.terraform.io/damoun/cloudinit/coolify | 1.1.0 |
 
 ## Inputs
 
@@ -96,6 +95,6 @@ output "url" {
 
 | Name | Type |
 |------|------|
-| [hcloud_firewall.coolify](https://registry.terraform.io/providers/hetznercloud/hcloud/1.54.0/docs/resources/firewall) | resource |
-| [hcloud_server.coolify](https://registry.terraform.io/providers/hetznercloud/hcloud/1.54.0/docs/resources/server) | resource |
+| [hcloud_firewall.coolify](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs/resources/firewall) | resource |
+| [hcloud_server.coolify](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs/resources/server) | resource |
 <!-- END_TF_DOCS -->
