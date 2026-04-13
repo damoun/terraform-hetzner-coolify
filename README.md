@@ -77,7 +77,7 @@ output "url" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_firewall_source_ips"></a> [firewall\_source\_ips](#input\_firewall\_source\_ips) | Source networks that have access to Coolify. | `list(string)` | <pre>[<br>  "0.0.0.0/0",<br>  "::/0"<br>]</pre> | no |
+| <a name="input_firewall_source_ips"></a> [firewall\_source\_ips](#input\_firewall\_source\_ips) | Source networks that have access to Coolify. | `list(string)` | <pre>[<br/>  "0.0.0.0/0",<br/>  "::/0"<br/>]</pre> | no |
 | <a name="input_ipv4_enabled"></a> [ipv4\_enabled](#input\_ipv4\_enabled) | Whether the Coolify instance should have a public IPv4 address. | `bool` | `true` | no |
 | <a name="input_location"></a> [location](#input\_location) | The location where the Coolify instance should be created. | `string` | n/a | yes |
 | <a name="input_server_type"></a> [server\_type](#input\_server\_type) | The server type to use for the Coolify instance. | `string` | n/a | yes |
